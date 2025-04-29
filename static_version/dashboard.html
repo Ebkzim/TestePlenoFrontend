@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="top-nav">
+            <div class="logo">capys</div>
+            <button class="logout-button" onclick="logout()">Sair</button>
+        </nav>
+        <div class="dashboard-content">
+            <div class="user-info">
+                <h1>Olá, <span id="userName">Teste Capys</span></h1>
+                <p class="user-role" id="userRole">Desenvolvedor Front-End</p>
+            </div>
+            <div class="development-message">
+                <h2>Que pena! Estamos em desenvolvimento :(</h2>
+                <p>Nossa aplicação está em desenvolvimento, em breve teremos novidades</p>
+            </div>
+        </div>
+    </div>
+    <div id="notification" class="notification"></div>
+    <script src="script.js"></script>
+</body>
+</html>

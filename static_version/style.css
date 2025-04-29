@@ -1,0 +1,250 @@
+
+:root {
+    --color-primary: #FF577F;
+    --color-primary-focus: #FF427F;
+    --color-primary-negative: #59323F;
+  
+    --blue-2: #121214;
+    --blue-1: #212529;
+    --grey-2: #343841;
+    --grey-1: #868E96;
+    --grey-0: #F8F9FA;
+  
+    --success: #3FE864;
+    --negative: #E83F5B;
+  
+    font-family: 'Inter', sans-serif;
+    --title1: bold 18px 'Inter';
+    --title2: bold 16px 'Inter';
+    --headline: normal 12px 'Inter';
+    --headline-bold: bold 12px 'Inter';
+    --paragraph: normal 16px 'Inter';
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: var(--blue-2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .logo {
+    color: var(--color-primary);
+    font: var(--title1);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .login-box {
+    background-color: var(--blue-1);
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: var(--grey-0);
+    font: var(--title1);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    color: var(--grey-0);
+    font: var(--headline-bold);
+    margin-bottom: 8px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--grey-2);
+    border: 2px solid var(--grey-2);
+    border-radius: 4px;
+    color: var(--grey-0);
+    font: var(--headline);
+  }
+  
+  input:focus, select:focus {
+    border-color: var(--grey-0);
+    outline: none;
+  }
+  
+  .password-input {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .toggle-password img {
+    width: 20px;
+    filter: invert(1);
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-primary);
+    color: var(--grey-0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font: var(--headline-bold);
+  }
+  
+  .login-button:hover {
+    background-color: var(--color-primary-focus);
+  }
+  
+  .signup-text {
+    color: var(--grey-1);
+    text-align: center;
+    margin-top: 20px;
+    font: var(--headline);
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--grey-2);
+    color: var(--grey-0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font: var(--headline-bold);
+  }
+  
+  .signup-button:hover {
+    background-color: var(--grey-1);
+  }
+  
+  .header {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .back-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: none;
+    border: none;
+    color: var(--grey-0);
+    cursor: pointer;
+    font: var(--headline-bold);
+  }
+  
+  .subtitle {
+    color: var(--grey-1);
+    text-align: center;
+    margin-bottom: 20px;
+    font: var(--headline);
+  }
+  
+  .dashboard-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--blue-2);
+  }
+  
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--blue-1);
+  }
+  
+  .logout-button {
+    background: var(--grey-2);
+    color: var(--grey-0);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font: var(--headline-bold);
+  }
+  
+  .dashboard-content {
+    padding: 40px;
+    color: var(--grey-0);
+  }
+  
+  .user-info {
+    margin-bottom: 40px;
+  }
+  
+  .user-info h1 {
+    font: var(--title1);
+    margin-bottom: 8px;
+  }
+  
+  .user-role {
+    color: var(--grey-1);
+    font: var(--headline);
+  }
+  
+  .development-message {
+    text-align: left;
+  }
+  
+  .development-message h2 {
+    font: var(--title2);
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  .development-message p {
+    color: var(--grey-1);
+    font: var(--headline);
+  }
+  
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: var(--grey-0);
+    display: none;
+    font: var(--headline);
+  }
+  
+  .notification.success {
+    background-color: var(--success);
+    display: block;
+  }
+  
+  .notification.error {
+    background-color: var(--negative);
+    display: block;
+  }
+  
